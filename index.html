@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahesh Portfolio</title>
+
+
+    <script src="https://kit.fontawesome.com/2e0d78a86c.js" crossorigin="anonymous"></script>
+
+    <!-- swiper css -->
+    <link
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Mahesh</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class='bx bx-moon' id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section Design -->
+     <section class="home" id="home">
+        <div class="bothContainers">
+            <div class="home-content">
+                <h3>Hello I am</h3>
+                <h1>Mahesh</h1>
+                <p>Tech Enthusiast</p>
+    
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/p-mahesh/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://x.com/PMahesh33172029?t=MvzXjWm8kHeDeGUhM4m8ww&s=08" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://github.com/MaheshSDE?tab=repositories" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://wa.me/7396967259/" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+                
+            </div>
+    
+            <div class="profession-container">
+                <div class="profession-box">
+                    <div class="profession" style="--i:0;">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Web Developer</h3>
+                    </div> 
+                    <div class="profession" style="--i:1;">
+                        <i class='bx bx-palette'></i>
+                        <h3>Web Designer</h3>
+                    </div>
+                    <div class="profession" style="--i:2;">
+                        <i class='bx bx-credit-card-front'></i>
+                        <h3>Frontend Developer</h3>
+                    </div>
+                    <div class="profession" style="--i:3;">
+                        <i class="fa-brands fa-envira"></i>
+                        <h3>FullStack Developer</h3>
+                    </div>
+    
+                    <div class="circle"></div>
+                </div>
+    
+                <div class="overlay"></div>
+            </div>
+
+            <div class="home-style-img">
+                <img src="https://res.cloudinary.com/ddsn9feta/image/upload/v1725976365/profileImg_gzdqkn.jpg" alt=""/>
+            </div>
+    
+            <div class="dynamicProfession">
+                <h3>I am a<br/><span id="profession" class="dynamicNames">Full stack developer</span></h3>
+            </div>
+    
+        </div>
+        
+        <div class="home-img">
+            <img src="https://res.cloudinary.com/ddsn9feta/image/upload/v1725608981/profile-removebg-preview_1_q7jazp.png" alt=""/>
+        </div>
+     </section>
+
+     <!-- About Section -->
+      <section class="about" id="about">
+        <div class="image-container"> <!-- <div class="about-img"> -->
+            <img src="https://res.cloudinary.com/ddsn9feta/image/upload/v1725608981/profile-removebg-preview_1_q7jazp.png" class="about-profile-img" alt=""/>
+        </div>
+        
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>I embrace every opportunity to explore, grow, and adapt. With every challenge I face, I uncover new knowledge and acquire the skills to pave my own path.</h3>
+            <p>Hi, I am <span>Mahesh.</span> I am challenging myself everyday by testing skills and expanding my knowledge.<br /> The pursuit of knowledge is my compass, and it guides me through the ever-changing terrain of technology.<br/>
+                            <span id="more-text">I am passionate about coding, programming, and the ever-changing world of technology. I spend time<br/>
+                                exploring the latest technologies advancements and keep experimenting with new tools every day.
+                            </span>
+            </p>
+            <a class="btn" id="read-more-btn" onclick="toggleReadMore()">Read More</a>
+
+        </div>
+      </section>
+
+      <!-- service section -->
+
+      <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web-design Development</h3>
+                <p>With a deep understanding of web development, I build dynamic, responsive, and user-centric websites that cater to various needs. From crafting clean and efficient code to integrating technologies.
+                    <span id="service-more-text1"> I ensure that every website is optimized for performance and scalability. My expertise spans across development, allowing me to deliver comprehensive, full-featured web solutions.</span></p>
+                <a  class="btn" id="service-read-more-btn1" onclick="toggleServiceReadMore1()">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-credit-card-front'></i>
+                <h3>Frontend Development</h3>
+                <p>I specialize in creating modern, responsive, and visually appealing user interfaces using HTML, CSS, and JavaScript. With a strong command of frameworks like React, I build dynamic web applications that deliver
+                    <span id="service-more-text2">
+                        seamless user experiences. I focus on clean, efficient code and design principles to ensure that every website or app is not only functional but also aesthetically engaging across all devices.
+                    </span>
+                </p>
+                <a class="btn" id="service-read-more-btn2" onclick="toggleServiceReadMore2()">Read More</a>
+            </div>
+            <div class="services-box">
+                <!-- <i class='bx bx-fullscreen'></i> -->
+                <i class="fa-brands fa-envira"></i>
+                <h3>FullStack Development</h3>
+                <p>As a full-stack developer, I have comprehensive expertise in both frontend and backend development. I specialize in the MERN stack (MongoDB, Express.js, React, Node.js), enabling me to build end-to-end
+                    <span id="service-more-text3">
+                        web applications that are scalable, secure, and efficient. From designing responsive user interfaces to developing robust backend APIs and managing databases.
+                    </span>
+                </p>
+                <a class="btn" id="service-read-more-btn3" onclick="toggleServiceReadMore3()">Read More</a>
+            </div>
+        </div>
+      </section>
+
+      <!-- Portfolio section -->
+       <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Project</span></h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="https://img.freepik.com/premium-photo/user-setting-up-product-categories-payment-options-through-ecommerce-control-panel_1327465-19145.jpg?w=740" alt=""/>
+
+                    <div class="portfolio-layer">
+                        <h4>Nxt E-commerce</h4>
+                        <p>It's fully functional e-commerce website with a user-friendly interface,highlighting frontend design. username:rahul<br/>password:rahul@2021</p>
+                        <a href="https://maheshtrends.ccbp.tech/" target="_blank" class="btn"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="https://img.freepik.com/premium-vector/job-searching-specialists-choosing-best-candidate-job-profiles-various-people-with-ranking-company-searching-new-employee-recruitment-concept-illustration_270158-629.jpg?w=740" alt=""/>
+
+                    <div class="portfolio-layer">
+                        <h4>Job Searcher</h4>
+                        <p>It's a platform for job seekers,to facilitate seamless job searches and applications.username:rahul<br/>password:rahul@2021</p>
+                        <a href="https://mahjobbyapp.ccbp.tech/" target="_blank" class="btn"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="https://res.cloudinary.com/ddsn9feta/image/upload/v1725779435/rules-image_wwf79d.png" alt=""/>
+
+                    <div class="portfolio-layer">
+                        <h4>Rock Paper Scissor Game</h4>
+                        <p>t is fro developing web pages to see the  front view of code that can users can understand easily.</p>
+                        <a href="https://rock-paper-scissor-game-ivory-gamma.vercel.app/" target="_blank" class="btn"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="https://img.freepik.com/premium-photo/themed-restaurant-with-immersive-decor-entertainment-elements_1327465-19992.jpg?w=740" alt=""/>
+
+                    <div class="portfolio-layer">
+                        <h4>Food Munch Restaurant</h4>
+                        <p>A responsive static website replicating Restaurant's interface, showcasing my frontend skills in HTML, CSS, Bootstrap.</p>
+                        <a href="https://menurestrant.ccbp.tech/" target="_blank" class="btn"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="https://img.freepik.com/premium-photo/netflix-logo-extruded-translucent-black-with-glossy-finish-floating-low-15-degree-tilt-n_655090-3655166.jpg" alt=""/>
+
+                    <div class="portfolio-layer">
+                        <h4>Netflix Clone Static</h4>
+                        <p>A responsive static website replicating Netflix's interface, showcasing my frontend skills in HTML, CSS. </p>
+                        <a href="https://ccbpnetflix.ccbp.tech/" target="_blank" class="btn"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="https://img.freepik.com/premium-photo/world-tourism-day_752325-15468.jpg?w=740" alt=""/>
+
+                    <div class="portfolio-layer">
+                        <h4>Tourism Static</h4>
+                        <p>A static website replicating Tourism interface, showcasing my frontend skills in HTML, CSS.</p>
+                        <a href="https://mustvisiting.ccbp.tech/" target="_blank" class="btn"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Design -->
+         <div class="testimonial-container">
+            <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+            <div class="testimonial-wrapper">
+                <div class="testimonial-box mySwiper">
+                    <div class="testimonial-content swiper-wrapper">
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="https://res.cloudinary.com/ddsn9feta/image/upload/v1725783240/kiran-removebg-preview_mj2mkm.png" alt="">
+                            <h3>Kiran Nagalgani</h3>
+                            <p>He designs user user friendly applications with Creative and excellent outcome<br/>
+                                <span class="testimonialStyle">FullStack trainee at Qspiders</span>
+                            </p>
+                        </div>
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="https://res.cloudinary.com/ddsn9feta/image/upload/v1725780049/shashi-removebg-preview_hru9es.png" alt="">
+                            <h3>Shashi Vardhan</h3>
+                            <p>Mahesh is a creative designer hardworker. He always seeks for perfection in work.<br/>
+                                <span class="testimonialStyle">Programmer from ABC</span>
+                            </p>
+                        </div>
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="https://res.cloudinary.com/ddsn9feta/image/upload/v1725780049/tharun-removebg_keucru.png" alt="">
+                            <h3>Tharun Perika</h3>
+                            <p>Designing websites in both mobile and pc's with responsive is not an easy thing for a fresher. It's requires hardwork and patience. You are good developer for designing a good responsive websites.<br/>
+                                <span class="testimonialStyle">Java developer at xyz</span>
+                            </p>
+                        </div>
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="https://res.cloudinary.com/ddsn9feta/image/upload/v1725965063/rahul-removebg-preview_o1moft.png" alt="">
+                            <h3>Rahul Nagavath</h3>
+                            <p>Your ability to combine these skills to build comprehensive and robust applications is truly impressive!
+
+                                Your expertise in the areas is truly impressive, and your ability to build a successful applications are a testament to your hard work and dedication.
+                                .<br/>
+                                <span class="testimonialStyle">Devops trainee</span>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    
+                </div>
+            </div>
+         </div>
+
+         <!-- Contact Section -->
+          <!-- <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="97883eb2-c104-4913-b083-d965772253a3">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" name="name" required>
+                    <input type="email" placeholder="Email Address" name="email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number" name="phoneNumber" required>
+                    <input type="text" placeholder="Email Subject" name="emailSubject" required>
+                </div>
+                <textarea id=""  cols="30" rows="10" placeholder="Your Message" name="message" required></textarea>
+                 <input type="submit" value="Send Message" class="btn" name="submitButton"> 
+                <button class="btn">Submit</button>
+            </form>
+          </section> -->
+
+          <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+        
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="97883eb2-c104-4913-b083-d965772253a3">
+                
+                <!-- Ensure all fields have unique and simple names -->
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" name="name" required>
+                    <input type="email" placeholder="Email Address" name="email" required>
+                </div>
+        
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number" name="phone" required>
+                    <input type="text" placeholder="Subject" name="subject" required>
+                </div>
+        
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                
+                <!-- <input type="submit" value="Send Message" class="btn"> -->
+                <button class="btn">Submit</button>
+            </form>
+        </section>
+        
+
+
+          <!-- Footer design -->
+          <div class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Mahesh | All Rights Reserved</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home">
+                    <i class='bx bx-up-arrow-alt'></i>
+                </a>
+            </div>
+          </div>
+
+          <!-- Scroll reveal -->
+          <script src="https://unpkg.com/scrollreveal"></script>
+
+         <!-- Swiper JS -->
+         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+         <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
